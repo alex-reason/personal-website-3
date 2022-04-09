@@ -292,6 +292,7 @@ footer .icon{
     .topnav a.icon {
         float: right;
         display: block;
+        margin-right: 1%;
     }
     .topnav.responsive {
         position: relative;}
