@@ -1,0 +1,309 @@
+/* navigation */
+nav{
+    font-family:'Roboto Mono', monospace;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 1.5%;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+.topnav a:hover {
+    text-decoration: underline;
+  } 
+  /* Add an active class to highlight the current page */
+.topnav a.active {
+    font-weight: 600;
+  }
+.icon{
+    font: normal normal normal 1.5rem/1 FontAwesome;
+}
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
+
+/* CONTENT */
+  /* Home */
+main {
+    font-family:'Roboto Mono', monospace;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.title{
+    text-align: center;
+    padding: 3%;
+    margin: 18% 10%;
+}
+.content {
+    text-align: left;
+    padding: 2% 10%;
+    margin: 10%;
+    border-bottom: 5px solid #000;
+}
+    /* Experience */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1%;
+}
+.name h4{
+    padding: 2%;
+}
+.name h4:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.description{
+    margin-top: 8%;
+    border-left: 2px solid #000;
+}
+.description ul{
+    list-style-type: none;
+    padding: 3%;
+}
+.description li{
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+}
+.description li:last-of-type{
+    font-size: 1.2rem;
+    padding-top: 10%;
+    color: rgb(54, 54, 54)
+}
+/* switching active contents */
+.inactive-button{
+    color: rgb(104, 103, 103);
+    text-decoration: none;
+}
+.active-button{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.hidden{
+    display: none;
+}
+/* Skills section */
+/* .hidden-container {
+    overflow: hidden;
+    
+  } */
+.sliding-content {
+    width: auto;
+    height: auto;
+  }
+.sliding-container{
+    overflow-x: scroll;
+    width: auto;
+    padding: 0 2%;
+}
+
+.sliding-left-right{
+    padding-top: 1%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    list-style-type: none;
+}
+#soft-content li, #tech-content li{
+    padding-right: 10%;
+    font-size: 1.5rem;
+}
+#skills .icon{
+    color: #000;
+    text-decoration: none;
+    font-size: 3rem
+}
+#skills .container{
+    padding-bottom: 10%;
+    border-bottom: 2px solid rgb(104, 103, 103);
+}
+#skills a:not(#skills .description a){
+    margin: auto 1%;
+}
+#skills .description{
+    border-left: 0;
+}
+#skills .description li{
+    font-size: 1.5rem;
+    padding-top: 0;
+    color: #000;
+}
+#skills .description p{
+    font-size: 1rem;
+}
+#skills .description a{
+    color: #000;
+}
+#skills .name {
+    flex-direction: row;
+}
+/* footer or contact section */
+footer .content{
+    margin: auto 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0;
+}
+footer a{
+    color: #000;
+    text-decoration: none;
+}
+footer a:hover{
+    transform: translateY(-0.1rem);
+}
+footer .icon{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+@media (max-width: 1250px){
+    .topnav a {
+        font-size: 1.5rem;
+      }
+    .description li{
+        font-size: 1.4rem;
+    }
+    #skills .description li{
+        font-size: 1.4rem;
+    }
+    #soft-content li, #tech-content li{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 2.0rem;
+    }
+}
+@media (max-width: 1000px) {
+    .topnav a {
+        font-size: 1.2rem;
+      }
+    .content{
+        padding:2%
+    }
+    /* home responsive */
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4{
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #skills .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #skills .name{
+        flex-direction: column;
+    }
+    .name h4{
+        border: 2px solid #000;
+        margin: 1%;
+    }
+    .description{
+        border: none;
+    }
+    .description ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    .description li, #skills .description li{
+        font-size: 1.3rem;
+    }
+    #soft-content li, #tech-content li{
+        font-size: 1.2rem;
+    }
+    .description li:last-of-type{
+        font-size: 1rem;
+        padding-top: 5%;
+    }
+    .hidden-container {
+        overflow: hidden;
+        width: auto;
+      }   
+      footer .icon{
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-width: 720px) {
+    /* nav responsive */
+    .topnav{
+        display: block;
+    }
+    
+    .topnav a:not(:last-child,:first-child){
+        font-size: 1.2rem;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
