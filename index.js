@@ -1,5 +1,5 @@
 // Navigation
-const topNav = document.getElementById("myTopnav");
+const topNav = document.getElementById("my-top-nav");
 const burgerExpand = () => {
     if (topNav.className === "topnav") {
         topNav.className += " responsive";
