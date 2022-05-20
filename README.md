@@ -1,3 +1,3 @@
 # personal-website-3
-practice website 3
-minimalist design website
+Practicing website #3. 
+Website uses a minimalist design.
